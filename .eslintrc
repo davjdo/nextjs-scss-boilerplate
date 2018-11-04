@@ -1,0 +1,82 @@
+{
+	"parserOptions": {
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true,
+		"jest": true,
+		"commonjs": true
+	},
+	"parser": "babel-eslint",
+	"extends": ["eslint:recommended", "airbnb", "prettier"],
+	"plugins": ["import", "jsx-a11y", "react", "prettier"],
+	"rules": {
+		"global-require": 1,
+		"no-trailing-spaces": 0,
+		"no-underscore-dangle": 0,
+		"no-console": "off",
+		"semi": "off",
+		"default-case": [0, { "commentPattern": "skip default case" }],
+		"import/no-extraneous-dependencies": 1,
+		"comma-dangle": ["error", "never"],
+		"no-unused-vars": [
+			"off",
+			{
+				"vars": "local",
+				"args": "none"
+			}
+		],
+		"no-multi-spaces": [
+			1,
+			{
+				"exceptions": {
+					"VariableDeclarator": true,
+					"FunctionExpression": true
+				}
+			}
+		],
+		"react/jsx-indent": [2, "tab"], 
+    "react/jsx-indent-props": [2, "tab"],
+		"react/jsx-one-expression-per-line": [0, "allow", "none"],
+		"react/jsx-max-props-per-line": [0, { "when": "multiline" }],
+		"react/jsx-props-no-multi-spaces": 0,
+		"react/react-in-jsx-scope": 0,
+		"react/no-danger": 1,
+		"react/self-closing-comp": 0,
+		"react/prefer-stateless-function": "off",
+		"react/destructuring-assignment": 0,
+		"react/prop-types": 0,
+		"react/jsx-filename-extension": [
+			"error",
+			{
+				"extensions": [".js", ".jsx"]
+			}
+		],
+		"jsx-a11y/html-has-lang": 1,
+		"jsx-a11y/anchor-is-valid": [ "error", {
+			"components": [ "Link" ],
+			"specialLink": [ "hrefLeft", "hrefRight" ],
+			"aspects": [ "invalidHref", "preferButton" ]
+		}],
+		"prettier/prettier": [
+			"error",
+			{
+				"singleQuote": true,
+				"semi": true,
+				"trailingComma": "none",
+				"printWidth": 80,
+				"bracketSpacing": true,
+				"jsxBracketSameLine": false,
+				"tabWidth": 2,
+				"useTabs": true,
+				"arrowParens": "avoid"
+			}
+		]
+	}
+}

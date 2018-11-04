@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "ignore": [],
+  "plugins": [
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    [
+      "import", {
+        "libraryName": "bootstrap"
+      }
+    ],
+    [
+      "wrap-in-js",
+      {
+        "extensions": ["css$", "scss$"]
+      }
+    ]
+  ]
+}  
